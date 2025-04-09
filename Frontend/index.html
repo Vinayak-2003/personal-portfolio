@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <span class="gradient-text">&lt;VK</span><span class="accent-text">/&gt;</span>
+      </a>
+      
+      <div class="desktop-menu">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#resume" class="nav-item">Resume</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </div>
+      
+      <button class="mobile-menu-button" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#home" class="nav-item">Home</a>
+    <a href="#about" class="nav-item">About</a>
+    <a href="#projects" class="nav-item">Projects</a>
+    <a href="#resume" class="nav-item">Resume</a>
+    <a href="#contact" class="nav-item">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="decorative-element top-right"></div>
+        <div class="decorative-element bottom-left"></div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Vinayak Kanchan</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          <span class="subtitle-role">Backend Developer</span>
+          <span class="dot"></span>
+          <span class="code-glow">Python</span>
+        </h2>
+        <p class="hero-text">
+          Crafting reliable, scalable backend systems with Python and cloud-native tools.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="primary-button">
+            View My Work
+          </a>
+          <a href="#contact" class="secondary-button">
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Code Block Decoration -->
+        <div class="code-block">
+          <pre><code class="text-code">
+        <span class="text-blue-500">def</span> <span class="text-yellow-500">developer</span>():
+          <span class="text-purple-500">coffee</span> = <span class="text-orange-500">True</span>
+          <span class="text-purple-500">bugs</span> = []
+        
+          <span class="text-blue-500">if</span> <span class="text-purple-500">coffee</span>:
+            <span class="text-green-500">solve_bugs</span>(<span class="text-purple-500">bugs</span>)
+        
+          <span class="text-blue-500">return</span> <span class="text-red-500">"Happy Client"</span>
+          </code></pre>
+        </div>
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title gradient-text">About Me</h2>
+      <div class="about-content">
+        <div class="profile-image-container">
+          <div class="profile-image">
+            <img src="assets/vinayak.jpeg" alt="Developer">
+          </div>
+          <div class="image-decoration"></div>
+          <div class="blob-decoration"></div>
+        </div>
+        <div class="about-text">
+          <p>
+            Hi! I'm Vinayak Kanchan, a final-year B.Tech Computer Science student at Manipal University Jaipur, 
+            with a specialization in Artificial Intelligence and Machine Learning. I'm deeply passionate about 
+            solving real-world problems through intelligent systems, backed by a strong foundation in backend 
+            development, machine learning, and cloud technologies.
+          </p>
+          <p>
+            Currently, I'm working at Celebal Technologies as a Junior Associate, where I've been immersed in 
+            developing and deploying microservices using FastAPI, Python, and JavaScript on Microsoft Azure. 
+            My work involves API management, event-driven architectures with Azure Event Hub, and secure cloud 
+            deployments.
+          </p>
+          <p>
+            Outside of work, I've led as the President of Turing Sapiens, managing a 60+ member tech community 
+            and organizing over 10 successful tech and non-tech events.
+          </p>
+          <h3 class="skills-title">My Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-python accent-icon"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-vial accent-icon"></i>
+              <span>Pytest</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-bolt accent-icon"></i>
+              <span>FastAPI</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database accent-icon"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-leaf accent-icon"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-plug accent-icon"></i>
+              <span>API Development</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-microsoft accent-icon"></i>
+              <span>Azure</span>
+            </div>
+          </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with Added Programmer Images -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title gradient-text">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1590059192860-8a218d1d1934?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Book Management Platform">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Book Management Platform</h3>
+            <p class="project-description">
+              A responsive e-commerce platform built with modern web technologies.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML, CSS, JS</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <a href="https://github.com/Vinayak-2003/Book-Management" class="project-link">
+              View Project 
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Automated IPC Prediction">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Automated IPC Prediction</h3>
+            <p class="project-description">
+              A personal portfolio website showcasing my projects and skills.
+            </p>
+            <div class="project-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">Python</span>
+              <span class="tag">Classification</span>
+            </div>
+            <a href="https://github.com/Vinayak-2003/IPC-prediction" class="project-link">
+              View Project 
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Weather App">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-description">
+              A weather application that provides real-time weather information.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+              <span class="tag">CSS</span>
+            </div>
+            <a href="#" class="project-link">
+              View Project 
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <div class="container">
+      <h2 class="section-title gradient-text">My Resume</h2>
+      <div class="resume-container">
+        <div class="resume-content">
+          <p class="resume-description">
+            Check out my professional background, education, and experience in my resume.
+            You can view it online or download a copy for your records.
+          </p>
+          <div class="resume-actions">
+            <a href="#" class="resume-button primary-button" id="view-resume">
+              <i class="fas fa-eye"></i>
+              View Resume
+            </a>
+            <a href="assets/Vinayak_Kanchan_Resume.pdf" download class="resume-button secondary-button">
+              <i class="fas fa-download"></i>
+              Download PDF
+            </a>
+          </div>
+        </div>
+        <div class="resume-preview">
+          <div class="resume-image">
+            <img src="https://images.unsplash.com/photo-1504691342899-4d92b50853e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Resume Preview">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Resume Modal (Hidden by default) -->
+      <div id="resume-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3 class="modal-title">My Resume</h3>
+          <div class="modal-body">
+            <!-- Resume content goes here -->
+            <div class="resume-section">
+              <h4>Education</h4>
+              <div class="resume-item">
+                <h5>Bachelor of Technology in Computer Science</h5>
+                <p class="resume-meta">Manipal University Jaipur, 2021-Present</p>
+                <p>Graduated with honors. Specialized in Artificial Intelligence and Machine Learning.</p>
+              </div>
+            </div>
+            
+            <div class="resume-section">
+              <h4>Experience</h4>
+              <div class="resume-item">
+                <h5>Backend Developer Trainee</h5>
+                <p class="resume-meta">Celebal Technologies, 2024-Present</p>
+                <p>Developed backends using FastAPI framework and Azure cloud service.</p>
+              </div>
+              <div class="resume-item">
+                <h5>President</h5>
+                <p class="resume-meta">Turing Sapiens, 2023-2024</p>
+                <p>Managed a 60+ member tech community and organized over 10 successful tech and non-tech events..</p>
+              </div>
+            </div>
+            
+            <div class="resume-section">
+              <h4>Skills</h4>
+              <div class="resume-skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Database</span>
+                <span class="skill-tag">Azure Integration Services</span>
+                <span class="skill-tag">Azure Messaging Services</span>
+                <span class="skill-tag">Python OOPS & Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title gradient-text">Get In Touch</h2>
+      <div class="contact-form-container">
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/Vinayak-2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vinayakkanchan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/kanchan_vinayak/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="copyright">
+        © <span id="current-year"></span> Vinayak Kanchan. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
